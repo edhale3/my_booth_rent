@@ -11,44 +11,127 @@
         <meta name="description" content="">
         <link rel="shortcut icon" type="icon" href="/public/images/MyBoothRentLogo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="/public/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,100&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script src="https://www.w3schools.com/lib/w3data.js"></script>
+        <script src="/public/app.js"></script>
     </head>
     <body class="w-full h-full absolute bg-mbr-background bg-cover bg-fixed font-poppins min-w-min">
-        <div class="relative" w3-include-html="nav_header.html"></div>
-        <div class="max-w-md float-right text-right bg-gradient-to-l from-purple-400 via-purple-400 to-transparent">
-          <h1 class="float-right font-medium text-black text-3xl break-normal pr-12 py-2">
-            Organize Your Space Efficiently
-          </h1>
-        </div>
-        <div id="what_is_mbr" class="bg-gray-100 mt-96 md:mt-132 pb-10">
-            <div class="flex justify-center">
-                <h1 class="text-3xl font-medium mt-8">
-                    What is MyBoothRent?
+        <div class="bg-black bg-opacity-60">
+            <div class="relative" w3-include-html="/public/nav_header.html"></div>
+            <div class="max-w-md float-left text-left ml-4 sm:ml-24">
+                <h1 class="float-left font-semibold text-white text-5xl break-normal">
+                    Booth Rental Software for Owners
                 </h1>
+                <div class=" float-left text-white text-xl relative mt-12">
+                    Coming This September!
+                </div>
+                <div class="float-left transform duration-300 hover:scale-110 ease-in-out relative mt-6">
+                    <a href="#contact" class="bg-yellow-1200 text-white rounded-md p-4" alt="contact">Alert me when the app is available!</a>
+                </div>
             </div>
-            <p class="m-16 font-light font-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atque labore!</p>
-        </div>
-        <div id="about" class="bg-gray-100 mt-96 pb-10">
-            <div class="flex justify-center">
-                <h1 class="text-3xl font-medium mt-8">
-                    About
-                </h1>
-            </div>
-            <p class="m-16 font-light font-">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atqueipsum dolor sit amet consectetur adipisicing elit. Sapiente, pariatur est harum facilis facere, tempora voluptates, molestias rerum quam cupiditate recusandae ex ut laborum explicabo voluptatem quis nam atque labore!</p>
-        </div>
-        <div id="contact" class="bg-gray-100 mt-96 pb-10">
-            <div class="relative" w3-include-html="contact_us.html"></div>
-        </div>
-        <div class="bg-gray-100 mt-48 h-1/6">
-           Footer
-        </div>
+            <div id="what_is_mbr" class="bg-gray-100 mt-96 md:mt-132 py-24 px-12 text-gray-900">
+                <div class="">
+                    <div class="w-full grid justify-items-center grid-cols-1 md:grid-cols-3">
+                        <div class="h-1/2 max-w-sm text-center transform duration-300 hover:scale-110 ease-in-out">
+                            <div class="flex justify-center m-4">
+                                <img class="justify-self-center" src="/public/images/icons8-edit-file-64.png">
+                            </div>
+                            <h2 class="font-bold m-2">Rent Reports</h2>
+                            <div class="flex text-center">
+                                Quickly generate reports of rental history, payment statuses, payment due dates, and much more! 
+                            </div>
+                        </div>
+                        <div class="h-1/2 max-w-sm text-center transform duration-300 hover:scale-110 ease-in-out">
+                            <div class="flex justify-center mt-8 m-4 sm:mt-4">
+                                <img class="justify-self-center" src="/public/images/icons8-documents-folder-64.png">
+                            </div>
+                            <h2 class="font-bold m-2">Document Organization</h2>
 
+                            <div class="flex text-center">
+                                Seamlessly organize rental documents including contracts, rental agreements, insurance uploads and others!
+                            </div>
+                        </div>
+                        <div class="h-1/2 max-w-sm text-center transform duration-300 hover:scale-110 ease-in-out">
+                            <div class="flex justify-center mt-8 m-4 sm:mt-4">
+                                <img class="justify-self-center" src="/public/images/icons8-us-dollar-64.png">
+                            </div>
+                            <h2 class="font-bold m-2">Auto Pay</h2>
+                            <div class="flex justify-center">
+                                <div>
+                                    Automatically charge and receive payments from the booth renters! Easy for you, out of sight them.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pricing" class="bg-gray-100 mt-72 p-12 pt-8 pb-24 text-gray-900">
+                <div class="text-center text-3xl p-4 font-light">
+                    Pricing
+                </div>
+                    <div class="w-full lg:flex lg:justify-evenly">
+                        <div class="flex justify-center my-6 mx-12 sm:mx-24 border-purple-400 border-4 border-solid rounded-xl p-6">
+                            <div class="text-center">
+                                <h4 class="font-bold">1-9 Booths</h4>
+                                <h1 class="m-2 text-4xl font-light text-gray-600">$19.99/<span class="text-xl">month</span></h1>
+                                <div class="justify-center font-bold bg-black text-yellow-1200 p-4 mt-8 text-xl rounded-lg">
+                                    Standard 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center my-6 mx-12 sm:mx-24 border-purple-400 border-4 border-solid rounded-xl p-6">
+                            <div class="text-center">
+                                <h4 class="font-bold">10-19 Booths</h4>
+                                <h1 class="m-2 text-4xl font-light text-gray-600">$29.99/<span class="text-xl">month</span></h1>
+                                <div class="justify-center font-bold bg-black text-yellow-1200 p-4 mt-8 text-xl rounded-lg">
+                                    Business 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center my-6 mx-12 sm:mx-24 border-purple-400 border-4 border-solid rounded-xl p-6">
+                            <div class="text-center">
+                                <h4 class="font-bold">20+ Booths</h4>
+                                <h1 class="m-2 text-4xl font-light text-gray-600">$39.99/<span class="text-xl">month</span></h1>
+                                <div class="justify-center font-bold bg-black text-yellow-1200 p-4 mt-8 text-xl rounded-lg">
+                                    Premium 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="about" class="bg-gray-100 mt-72 p-2 md:p-10">
+                <div class="flex justify-center mt-6">
+                    <div class="text-center w-3/4">
+                        <p><span class="font-bold">MyBoothRent</span> is a Software Management Tool for Salon, Barbershop and Tattoo shop owners. </p>
+                        <p><span class="underline">Coming this September</span> you can have access to a well designed, easy to use platform to organize and accept your booth rent. Save time and money by putting your booth rental business on auto pilot!</p>
+                    </div>
+                </div>
+                <div class="flex justify-center mb-12">
+                    <div class="p-6 mt-12 w-3/4 h-96 bg-black flex justify-center items-center">
+                        <div class="text-white text-center">
+                            Demo Coming Soon
+                            <div class="flex justify-center">
+                                <img class="" src="/public/images/icons8-youtube-play-button-64.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="contact" class="bg-gray-100 mt-72 pb-10">
+                <div class="relative" w3-include-html="/public/contact_us.html"></div>
+            </div>
+            <div class="mt-24 h-1/6 text-3xl font-light text-white p-12">
+                <a href="#">
+                    <div class="float-left">Back to Top</div>
+                    <img class="h-8" src="/public/images/icons8-thick-arrow-pointing-up-64.png">
+                </a>
+            </div>
+        </div>
         <script>w3IncludeHTML()</script>
-        <script src="app.js" async defer></script>
     </body>
 </html>
